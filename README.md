@@ -1,16 +1,18 @@
-LV GoldenAge Font Family
-========================
+# lv-goldenage lyp package
 
-To make the most of these fonts, there are two text fonts that should be 
-installed in the normal font installation location (which is different for 
-each OS):
+This is a packaging of the goldenage font packages and the lilyjazz stylesheet for use with the `lyp` package manager.
 
-- **GoldenAge Text**: A hand-written font designed to represent the clear type
-  of traditional music copyists. This is the default text font in the 
-  ``lv-goldenage.ily`` stylesheet.
-- **GoldenAge Title**: Similar to the above, but more suited for titling.
+Most of the contents is just a rearrangement of Steve Lacy's (@slacy) https://github.com/OpenLilyPondFonts/lv-goldenage repository (which itself is based on [Abraham Lee](mailto:tisimst.lilypond@gmail.com)'s music font and lilypond work, Donald Rice's text fonts) to conform to `lyp` packing standards.
 
-Any questions relating to font installation and usage can be sent to
-[Abraham Lee](mailto:tisimst.lilypond@gmail.com).
+The only added files are:
 
-These two fonts were created and copyrighted (c) 1996 by Donald Rice.
+* `package.ly`, the `lyp` packaging root.
+* `jazzchords_test.ly`, a test sheet for a wide variety of jazz chords.
+* `morejazz.ily`, a number of tweaks to the chord name display, notably
+   * Using a triangle instead of "M" for major 7th chords.
+   * Adding a few more exotic chord combinations.
+   * Defining stacked alterations in a way that is more robust to font size variations.
+
+To restore the chord naming in the original package, add `\set chordNameExceptions = #JazzChords` in your file.
+
+GoldenAgeText and GoldenAgeTitle were created and copyrighted (c) 1996 by Donald Rice.
