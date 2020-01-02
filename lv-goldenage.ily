@@ -1,4 +1,4 @@
-%%%% The stylesheet for IMPROVISO music font and PEAMISSYWITHAMARKER font
+%%%% The stylesheet for GOLDENAGE music and text fonts
 %%%%
 %%%% In order for this to work, this file's directory needs to
 %%%% be placed in LilyPond's path
@@ -10,6 +10,7 @@
 %%%% \include "lv-goldenage.ily"
 %%%%
 %%%% Copyright (C) 2014-2016 Abraham Lee (tisimst.lilypond@gmail.com)
+%%%% Text fonts Copyright (C) 1996 Donald Rice
 
 \version "2.19.12"
 
@@ -18,8 +19,8 @@
     (set-global-fonts
     #:music "lv-goldenage"
     #:brace "lv-goldenage"
-    #:roman "GoldenAge"
-    #:sans "GoldenAge"
+    #:roman "GoldenAgeTitle"
+    #:sans "GoldenAgeText"
     #:factor (/ staff-height pt 20)
   ))
 }
