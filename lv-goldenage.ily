@@ -19,8 +19,8 @@
     (set-global-fonts
     #:music "lv-goldenage"
     #:brace "lv-goldenage"
-    #:roman "GoldenAgeTitle"
-    #:sans "GoldenAgeText"
+    #:roman "GoldenAge"
+    #:sans "GoldenAge"
     #:factor (/ staff-height pt 20)
   ))
 }
